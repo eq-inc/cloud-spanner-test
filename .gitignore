@@ -1,0 +1,10 @@
+# JetBrains IDE
+.idea
+*.iml
+
+# Node.js
+node_modules
+
+# TypeScript
+*.js
+*.map

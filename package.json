@@ -1,0 +1,37 @@
+{
+    "name": "cloud-spanner-test",
+    "version": "0.1.0",
+    "description": "Test of Cloud Spanner",
+    "homepage": "https://github.com/fujimaki-k/cloud-spanner-test",
+    "license": "MIT",
+    "author": "Kazuma Fujimaki <fujimaki-k@fujimakishouten.com>",
+    "main": "crud.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fujimaki-k/cloud-spanner-test.git"
+    },
+    "scripts": {
+        "init": "npm run tsc && node init.js",
+        "tsc": "tsc",
+        "typescript": "npm run tsc",
+        "test": "npm run tsc && mocha --timeout 5000 ./test.js"
+    },
+    "dependencies": {
+        "@google-cloud/spanner": "^1.5.0",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "@types/node": "^10.5.1",
+        "@types/mocha": "^5.2.4",
+        "@types/expect.js": "^0.3.29",
+        "@types/uuid": "^3.4.3",
+        "expect.js": "^0.3.1",
+        "mocha": "^5.2.0",
+        "tslint": "^5.10.0",
+        "tslint-eslint-rules": "^5.3.1",
+        "typescript": "^2.9.2"
+    },
+    "engines": {
+        "node": "~8.10.0"
+    }
+}
